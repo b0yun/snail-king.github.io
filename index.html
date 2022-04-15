@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>谭嘉琳</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>大小单双</title>
 	</head>
-	<body>
-		谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师谭嘉琳老师
+	<body> 
+	本金501个注码
+		<div id="">
+			<hr />
+			<br>
+			第1期：003倍&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="dx1" id="dx1" value="大" /><br>
+			第2期：007倍&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="dx2" id="dx2" value="大" /><br>
+			第3期：015倍&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="dx3" id="dx3" value="大" /><br>
+			第4期：031倍&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="dx4" id="dx4" value="大" /><br>
+			第5期：063倍&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="dx5" id="dx5" value="大" /><br>
+			第6期：127倍&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="dx6" id="dx6" value="大" /><br>
+			第7期：255倍&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="dx7" id="dx7" value="大" /><br>
+			<br>
+			<br>
+			<input type="button" name="" id="btn_start"  value="开始随机" />
+			<br>
+			<br>
+			<hr />
+			<p>使用说明：点击开始随机按钮，就会随机生成7期的大小，您可以使用生成的随机7期大小进行倍投 本金501</p>
+		</div>
+		<script type="text/javascript">
+			var btn_start = document.getElementById("btn_start");
+			var dx1 = document.getElementById("dx1");
+			var dx2 = document.getElementById("dx2");
+			var dx3 = document.getElementById("dx3");
+			var dx4 = document.getElementById("dx4");
+			var dx5 = document.getElementById("dx5");
+			var dx6 = document.getElementById("dx6");
+			var dx7 = document.getElementById("dx7");
+			btn_start.onclick = function(){
+				
+				
+				dx1.value = suiji();
+				dx2.value = suiji();
+				dx3.value = suiji();
+				dx4.value = suiji();
+				dx5.value = suiji();
+				dx6.value = suiji();
+				dx7.value = suiji();
+				
+			}
+			
+			function suiji() {
+			　　　　let arr = ['大', '小']
+			　　　　let index = Math.floor((Math.random()*arr.length))
+					return arr[index];
+			　　　　console.log(arr[index])
+			　　}
+		</script>
 	</body>
 </html>
